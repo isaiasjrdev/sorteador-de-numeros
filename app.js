@@ -34,3 +34,11 @@ function alterarStatusBotao() {
       botao.classList.remove('container__botao')
    }
 }
+
+function reiniciar() {
+   document.querySelector("#quantidade").value = '';
+   document.querySelector("#de").value = '';
+   document.querySelector("#ate").value = '';
+   document.querySelector("#resultado").innerHTML = '<label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>';
+   alterarStatusBotao();
+}
